@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Construction | Bhatia Employment Pvt Ltd</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bepl-bg': '#030814', 
+                        'bepl-dark': '#010308', 
+                        'bepl-gold': '#D4AF37', 
+                        'bepl-card': '#050B1A',
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                        sans: ['"Inter"', 'system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Force full height and disable scroll for the under construction view */
+        html, body { height: 100%; overflow: hidden; }
+        
+        .fade-in-up {
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hammer-animate {
+            animation: hammerSwing 2s ease-in-out infinite;
+            transform-origin: bottom right;
+        }
+        @keyframes hammerSwing {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(-15deg); }
+        }
+    </style>
+</head>
+
+<body class="bg-bepl-bg text-white font-sans antialiased selection:bg-bepl-gold selection:text-bepl-bg flex flex-col">
+
+    <header class="bg-bepl-dark px-6 lg:px-10 py-3 lg:py-4 border-b border-white/5 w-full shrink-0 z-50">
+        <div class="max-w-[1500px] mx-auto flex justify-between items-center w-full">
+            <a href="index.html" class="flex items-center shrink-0 border-none outline-none">
+                <img src="bepllogo.png" alt="Bhatia Employment Pvt Ltd" class="h-10 lg:h-12 w-auto object-contain transform scale-[1.2] lg:scale-[1.3] origin-left">
+            </a>
+            
+            <nav aria-label="Main Navigation" class="hidden lg:block">
+                <ul class="flex space-x-6 xl:space-x-10 text-[10px] font-bold uppercase tracking-[0.15em] text-white/80 items-center">
+                    <li><a href="index.html" class="hover:text-bepl-gold transition-colors">HOME</a></li>
+                    <li><a href="#" class="text-bepl-gold border-b-2 border-bepl-gold pb-1.5">ABOUT US</a></li>
+                    <li><a href="services.html" class="hover:text-bepl-gold transition-colors">SERVICES</a></li>
+                    <li><a href="#" class="hover:text-bepl-gold transition-colors">CURRENT VACANCIES</a></li>
+                    <li><a href="#" class="hover:text-bepl-gold transition-colors">OUR CLIENTS</a></li>
+                    <li>
+                        <a href="contact.html" class="bg-bepl-gold text-bepl-dark px-6 py-2.5 rounded-sm hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(212,175,55,0.4)] transition-all duration-300 block">
+                            CONTACT US
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-1 flex flex-col items-center justify-center px-6 text-center relative overflow-hidden">
+        
+        <div class="mb-8 fade-in-up" style="animation-delay: 0.1s;">
+            <svg class="w-24 h-24 lg:w-32 lg:h-32 text-bepl-gold/20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                <path class="hammer-animate" d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.7a2.5 2.5 0 0 1 3.54 3.54l-3.7 3.77a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l6.18-6.18a4.5 4.5 0 0 0-6.37-6.37l-6.18 6.18z"/>
+                <path d="m18.22 13.72-8.32 8.33a2.5 2.5 0 0 1-3.54 0l-4.44-4.44a2.5 2.5 0 0 1 0-3.54l8.33-8.32"/>
+            </svg>
+        </div>
+
+        <div class="max-w-3xl fade-in-up" style="animation-delay: 0.2s;">
+            <h2 class="text-3xl lg:text-5xl font-serif text-white mb-6">Construction in Progress.</h2>
+            <p class="text-white/50 font-light text-base lg:text-lg leading-relaxed mb-8">
+                This part of the website is under construction. Once the design language is finalised I can construct it. In the meantime, explore the sections already engineered for your review.
+            </p>
+            <p class="text-bepl-gold font-medium text-sm lg:text-base tracking-wide mb-12">
+                If you require any changes in terms of design or content please let me know I can do the needful.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6 w-full max-w-4xl fade-in-up" style="animation-delay: 0.3s;">
+            <a href="index.html" class="group bg-white/[0.03] border border-white/10 p-6 rounded-sm hover:border-bepl-gold/50 transition-all duration-300">
+                <span class="block text-[10px] uppercase tracking-widest text-white/40 mb-2 group-hover:text-bepl-gold">Back to Root</span>
+                <span class="text-lg font-serif">Home Page</span>
+            </a>
+            <a href="services.html" class="group bg-white/[0.03] border border-white/10 p-6 rounded-sm hover:border-bepl-gold/50 transition-all duration-300">
+                <span class="block text-[10px] uppercase tracking-widest text-white/40 mb-2 group-hover:text-bepl-gold">Explore Solutions</span>
+                <span class="text-lg font-serif">Services</span>
+            </a>
+            <a href="contact.html" class="group bg-white/[0.03] border border-white/10 p-6 rounded-sm hover:border-bepl-gold/50 transition-all duration-300">
+                <span class="block text-[10px] uppercase tracking-widest text-white/40 mb-2 group-hover:text-bepl-gold">Get in Touch</span>
+                <span class="text-lg font-serif">Contact Us</span>
+            </a>
+        </div>
+
+    </main>
+
+    <footer class="w-full bg-bepl-dark border-t border-bepl-gold/20 relative shrink-0">
+        <div class="max-w-[1200px] mx-auto w-full px-6 lg:px-10 py-8 relative z-10 flex flex-col md:flex-row justify-between items-center">
+            
+            <div class="flex items-center space-x-8 mb-6 md:mb-0">
+                <a href="index.html" class="border-none outline-none">
+                    <img src="bepllogo.png" alt="Logo" class="h-10 lg:h-12 w-auto object-contain transform scale-[1.1] lg:scale-[1.2] origin-left">
+                </a>
+                <p class="text-[10px] text-white/30 uppercase tracking-widest font-mono">
+                    Reg. No: B-1481/MUM/COM/1000+/5/9849/2021
+                </p>
+            </div>
+
+            <div class="flex flex-col items-center md:items-end">
+                <p class="text-[10px] text-white/30 uppercase tracking-[0.2em] mb-2">
+                    &copy; 2026 Bhatia Employment Pvt Ltd.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="index.html" class="text-[10px] text-white/40 hover:text-bepl-gold transition-colors">HOME</a>
+                    <a href="services.html" class="text-[10px] text-white/40 hover:text-bepl-gold transition-colors">SERVICES</a>
+                    <a href="contact.html" class="text-[10px] text-white/40 hover:text-bepl-gold transition-colors">CONTACT</a>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+
+</body>
+</html>
